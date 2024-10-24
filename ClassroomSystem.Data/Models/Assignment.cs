@@ -37,8 +37,8 @@ namespace ClassroomSystem.Data.Models
         [ForeignKey(nameof(CourseId))]
         public virtual Course Course { get; set; } = null!;
 
-        public ICollection<AssignmentMaterial> Materials { get; set; } = new List<AssignmentMaterial>();
+        public ICollection<AssignmentMaterial> Materials { get; set; } = new HashSet<AssignmentMaterial>();
 
-        public ICollection<Grade> Grades { get; set; } = new List<Grade>(); 
+        public ICollection<Grade> Grades { get; set; } = new HashSet<Grade>(); 
     }
 }

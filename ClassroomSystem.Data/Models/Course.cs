@@ -36,7 +36,7 @@ namespace ClassroomSystem.Data.Models
         public IdentityUser User { get; set; } = null!;
 
 
-        public virtual ICollection<Assignment> Assignments { get; set; } = new List<Assignment>();
+        public virtual ICollection<Assignment> Assignments { get; set; } = new HashSet<Assignment>();
         public virtual ICollection<UserCourse> UsersCourses { get; set; } = new HashSet<UserCourse>();
     }
 }

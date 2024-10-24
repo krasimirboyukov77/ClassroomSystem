@@ -26,6 +26,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\SoftUni Exam Project\ClassroomSystem.Data\ClassroomSystem.Data.csproj" />
     <ProjectReference Include="..\..\..\SoftUni Exam Project\ClassroomSystem.ViewModels\ClassroomSystem.ViewModels.csproj" />
+    <ProjectReference Include="..\ClassroomSystem.Data\ClassroomSystem.Data.csproj" />
+    <ProjectReference Include="..\ClassroomSystem.ViewModels\ClassroomSystem.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

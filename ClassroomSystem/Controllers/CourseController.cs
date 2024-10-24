@@ -78,8 +78,19 @@ namespace ClassroomSystem.Controllers
             if (course == null)
             {
                 return View("Index");
-            } 
-            return View(course);
+            }
+
+            DetailsCourseViewModel courseDetails = new()
+            {
+                Id = course.Id,
+                Name = course.Name,
+                Description = course.Description ?? string.Empty,
+                CreatedOn = course.DateCreated,
+                CreatorId = course.UserId,
+                Assignments = course.Assignments,
+            };
+
+            return View(courseDetails);
         }
 
         
