@@ -31,7 +31,7 @@
                                 *
                             </span>
                         </label>
-                        <input class="form-control" asp-for="DueDate" placeholder="MM/DD/YYYY" type="text" />
+                        <input class="form-control" asp-for="DueDate" placeholder="MM/DD/YYYY" type="text" value="@DateTime.Now"/>
                         <span asp-validation-for="Description" class="text-danger"></span>
                     </div>
                     <input type="hidden" asp-for="CourseId" />
